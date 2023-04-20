@@ -18,17 +18,16 @@ public class Main {
         int passwordLength = scanner.nextInt();
 
         // Prompt user for y/n and "convert" to bool
+        System.out.println("Would you like special characters in your password? (y/n)");
         String specialCharsInput = "";
         int counter = 0;
         do {
             if (counter > 1) {
                 System.out.println("Please enter either \"y\" for yes or \"n\" for no.");
-            } else {
-                System.out.println("Would you like special characters in your password? (y/n)");
             }
             specialCharsInput = scanner.nextLine();
             counter++;
-        } while (!specialCharsInput.equals("y") && !specialCharsInput.equals(specialCharsInput, "n"));
+        } while (!specialCharsInput.equals("y") && !specialCharsInput.equals("n"));
 
         scanner.close();
 
